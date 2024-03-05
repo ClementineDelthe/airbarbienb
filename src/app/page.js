@@ -1,12 +1,9 @@
-import Image from "next/image";
-
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Suggestion from "./components/Suggestion";
 import Carousel from "./components/Carousel";
 import LargeCard from "./components/LargeCard";
 import Footer from "./components/Footer";
-
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -15,20 +12,19 @@ export default function Home({ exploreData, cardsData }) {
       <Banner />
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-6">
-          <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
+          <h2 className="text-4xl font-semibold pb-5">Themes & Categories</h2>
           <Suggestion exploreData={exploreData} />
 
         </section>
         <section>
-          <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
+          <h2 className="text-4xl font-semibold py-8">Highlits</h2>
           <Carousel />
         </section>
 
         <LargeCard
-          img="https://links.papareact.com/3cj"
-          title="The Greatest Outdoors"
+          title="The Greatest Dream"
           description="Whishlists curated by AirBarbieNb"
-          buttonText="Get Inspired"
+          buttonText="Get the Reveal"
         />
       </main>
       <Footer />

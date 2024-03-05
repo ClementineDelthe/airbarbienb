@@ -1,21 +1,22 @@
 import MediumCard from "./MediumCard";
+// import BSport from "../../../public/BSport.jpeg";
 
 const places = [
   {
-    "img": "https://links.papareact.com/2io",
-    "title": "Outdoor getaways"
+    "img": "/img/BSport.jpeg",
+    "title": "Sport Vocations"
   },
   {
-    "img": "https://links.papareact.com/q7j",
-    "title": "Unique stays"
+    "img": "/img/BMovie.jpeg",
+    "title": "Barbie The Movie"
   },
   {
-    "img": "https://links.papareact.com/s03",
-    "title": "Entire homes"
+    "img": "/img/BHouse.jpeg",
+    "title": "Dream Big"
   },
   {
-    "img": "https://links.papareact.com/8ix",
-    "title": "Pet allowed"
+    "img": "/img/BDHAdventure.jpeg",
+    "title": "Barbie Dream House"
   }
 ];
 
