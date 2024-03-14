@@ -15,7 +15,7 @@ import { DateRangePicker } from 'react-date-range';
 import { useRouter } from "next/navigation";
 
 
-function Header() {
+function Header(placeholder) {
   const router = useRouter();
 
   const [searchInput, setSearchInput] = useState("");
@@ -57,7 +57,7 @@ function Header() {
   }
 
 
-
+  // console.log(placeholder.placeholder);
 
   return (
     <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
@@ -77,7 +77,7 @@ function Header() {
         <input
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
-          className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400" type="text" placeholder="Start your search" />
+          className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400" type="text" placeholder={ placeholder.placeholder || "Start your search" }/>
         <MagnifyingGlassIcon
           className="hidden md:inline-flex h-8 bg-[#ff3eb4] text-white rounded-full p-2 cursor-pointer md:mx-2"
         />

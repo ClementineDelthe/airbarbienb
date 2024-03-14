@@ -1,9 +1,9 @@
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import Suggestion from "./components/Suggestion";
-import Carousel from "./components/Carousel";
-import LargeCard from "./components/LargeCard";
-import Footer from "./components/Footer";
+import Header from "../src/app/components/Header";
+import Banner from "../src/app/components/Banner";
+import Suggestion from "../src/app/components/Suggestion";
+import Carousel from "../src/app/components/Carousel";
+import LargeCard from "../src/app/components/LargeCard";
+import Footer from "../src/app/components/Footer";
 
 export default function Home({ exploreData, cardsData }) {
   return (
